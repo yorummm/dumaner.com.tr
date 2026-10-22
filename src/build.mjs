@@ -297,8 +297,7 @@ ${shot(lang, '2-chat', t.steps[3][0])}
 
 <section class="block" id="sources"><div class="wrap">
 <h2>${esc(t.sourcesTitle)}</h2>
-<p class="intro">${esc(t.sourcesIntro)}</p>
-<ul class="sources-list">${t.sources.map(([b, s]) => `<li><b>${esc(b)}</b><span>${esc(s)}</span></li>`).join('')}</ul>
+<p class="intro intro-last">${esc(t.sourcesIntro)}</p>
 </div></section>
 
 <section class="block" id="apps"><div class="wrap">

@@ -320,3 +320,4 @@ footer.site a { color: var(--sage); }
 .doc section p, .doc section li { color: #d7d0c0; }
 .doc .muted { color: var(--sage); font-size: 14px; }
 .doc ol { padding-inline-start: 22px; }
+.block .intro-last { margin-bottom: 0; }
