@@ -78,7 +78,6 @@ const T = {
     ],
     more: [
       ['Hadis ve dua', 'Konularına göre hadisler, rivayet ve sıhhat bilgisiyle; günlük dualar.'],
-      ['Mesnevi', 'Mevlânâ’nın Mesnevî’si, altı defterin tamamı.'],
       ['Günün ayeti ve hadisi', 'Her gün yenisi; istersen sabah ve akşam bildirim olarak.'],
       ['Notlar ve favoriler', 'Ayetlere, hadislere ve dualara kendi notunu ekle.'],
       ['Uygulama kilidi', 'Face ID ya da parmak iziyle aç; açık ve koyu tema.'],
@@ -91,13 +90,12 @@ const T = {
       ['Mealler ve tefsir', 'QuranEnc.com; Türkçe meal: Dr. Ali Özek ve diğerleri; Muhtasar Tefsir'],
       ['Hadisler', 'HadeethEnc.com; metin, açıklama ve sıhhat derecesiyle'],
       ['Tilavet', 'Quran.Foundation; 12 kâri, internetten dinlenir'],
-      ['Mesnevi', 'Türkiye Yazma Eserler Kurumu çevirisi, izinle'],
       ['Namaz vakitleri', 'Cihazda hesaplanır; Türkiye’de Diyanet yöntemi'],
     ],
     appsTitle: 'Uygulamalar',
     appsIntro: 'Biri yolda, yenileri arkasından gelecek.',
     appDesc:
-      'Namaz vakitleri, Kur’an, hadis, dua, Namaz Rehberi, Zikirmatik ve Mesnevi; ruh hâline göre öneriler sunan sohbetle birlikte.',
+      'Namaz vakitleri, Kur’an, hadis, dua, Namaz Rehberi ve Zikirmatik; ruh hâline göre öneriler sunan sohbetle birlikte.',
     appStatus: 'App Store ve Google Play’de yakında',
     links: { support: 'Destek', privacy: 'Gizlilik', deleteData: 'Veri silme' },
     nextTitle: 'Sıradaki uygulama',
@@ -179,7 +177,6 @@ const T = {
       ['Translations and tafsir', 'QuranEnc.com; English: Saheeh International; Al-Mukhtasar tafsir'],
       ['Hadiths', 'HadeethEnc.com; with explanation and grading'],
       ['Recitation', 'Quran.Foundation; 12 reciters, streamed'],
-      ['Masnavi (Turkish)', 'Türkiye Manuscripts Institution translation, with permission'],
       ['Prayer times', 'Calculated on the device with your region’s method'],
     ],
     appsTitle: 'Apps',
@@ -346,7 +343,6 @@ const SOURCES = [
   'Quran translations and tafsir: QuranEnc.com, used without changes. Turkish: Dr. Ali Özek et al.; English: Saheeh International (Noor International Center); Indonesian: Ministry of Religious Affairs; Urdu: Muhammad Junagarhi; Malay: Abdullah Muhammad Basmeih; Bengali: Abu Bakr Zakaria; Arabic: al-Tafsir al-Muyassar; Al-Mukhtasar fi Tafsir al-Quran al-Karim (Turkish, English, Arabic, Indonesian, Bengali).',
   'Hadiths, explanations and gradings: HadeethEnc.com, used without changes.',
   'Recitation audio: Quran.Foundation (quran.com) API, streamed.',
-  'Masnavi (Turkish): Mesnevî-i Ma‘nevî, translated by Prof. Dr. Derya Örs and Prof. Dr. Hicabi Kırlangıç, Türkiye Yazma Eserler Kurumu Başkanlığı Yayınları, 2015. Used with permission.',
   'Prayer times: calculated on the device with the adhan library, using the method common in the user’s region (Diyanet in Türkiye).',
 ];
 
