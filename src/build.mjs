@@ -38,6 +38,7 @@ const T = {
     lead:
       'Namaz vakitleri, Kur’an-ı Kerim, hadis ve dualar tek bir sakin uygulamada. <strong>Ünsiyet sohbeti</strong> ruh hâlini dinler ve doğrulanmış kaynaklardan sana uygun ayet, hadis ve dua önerir.',
     soon: 'Yakında',
+    download: 'Şimdi indir',
     appStore: 'App Store’da',
     googlePlay: 'Google Play’de',
     seeHow: 'Nasıl çalıştığını gör',
@@ -93,10 +94,10 @@ const T = {
       ['Namaz vakitleri', 'Cihazda hesaplanır; Türkiye’de Diyanet yöntemi'],
     ],
     appsTitle: 'Uygulamalar',
-    appsIntro: 'Biri yolda, yenileri arkasından gelecek.',
+    appsIntro: 'İlki App Store’da, yenileri arkasından gelecek.',
     appDesc:
       'Namaz vakitleri, Kur’an, hadis, dua, Namaz Rehberi ve Zikirmatik; ruh hâline göre öneriler sunan sohbetle birlikte.',
-    appStatus: 'App Store ve Google Play’de yakında',
+    appStatus: 'App Store’da · Google Play’de yakında',
     links: { support: 'Destek', privacy: 'Gizlilik', deleteData: 'Veri silme' },
     nextTitle: 'Sıradaki uygulama',
     nextText: 'Üzerinde çalışıyorum. Hazır olduğunda ilk burada duyacaksın.',
@@ -124,6 +125,7 @@ const T = {
     lead:
       'Prayer times, the Holy Quran, hadiths and duas in one calm app. <strong>The Ünsiyet chat</strong> listens to how you feel and suggests verses, hadiths and duas from verified sources.',
     soon: 'Coming soon',
+    download: 'Download now',
     appStore: 'on the App Store',
     googlePlay: 'on Google Play',
     seeHow: 'See how it works',
@@ -180,9 +182,9 @@ const T = {
       ['Prayer times', 'Calculated on the device with your region’s method'],
     ],
     appsTitle: 'Apps',
-    appsIntro: 'One is on its way, more will follow.',
+    appsIntro: 'The first is on the App Store, more will follow.',
     appDesc: 'Prayer times, Quran, hadith, dua, a Prayer Guide and a Dhikr Counter, with a chat that suggests verses for how you feel.',
-    appStatus: 'Coming soon to the App Store and Google Play',
+    appStatus: 'On the App Store · coming soon to Google Play',
     links: { support: 'Support', privacy: 'Privacy', deleteData: 'Data deletion' },
     nextTitle: 'The next app',
     nextText: 'I am working on it. You will hear about it here first.',
@@ -238,7 +240,7 @@ ${nav}<a class="lang" href="${t.other.href}" hreflang="${t.other.label.toLowerCa
 }
 
 const stores = (t) => `<div class="actions">
-<a class="store" aria-disabled="true">${APPLE}<span><small>${esc(t.soon)}</small><b>${esc(t.appStore)}</b></span></a>
+<a class="store" href="${t.htmlLang === 'en' ? 'https://apps.apple.com/app/id6824037334' : 'https://apps.apple.com/tr/app/id6824037334'}" target="_blank" rel="noopener">${APPLE}<span><small>${esc(t.download)}</small><b>${esc(t.appStore)}</b></span></a>
 <a class="store ghost" aria-disabled="true">${PLAY}<span><small>${esc(t.soon)}</small><b>${esc(t.googlePlay)}</b></span></a>
 </div>`;
 
