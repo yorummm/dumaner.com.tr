@@ -393,7 +393,76 @@ ${sections}
 `;
 }
 
+/* ---- Terms of Service (Turkish and English) ---- */
+
+const TERMS = JSON.parse(readFileSync(join(src, 'content', 'terms.json'), 'utf8'));
+
+function termsPage() {
+  const sections = ['tr', 'en'].map((l) => {
+    const d = TERMS[l];
+    const u = UI[l];
+    const body =
+      `<h2>${esc(d.title)}</h2><p class="muted">${esc(d.updated)}</p><p>${esc(d.intro)}</p>` +
+      d.items.map(([title, text]) => `<h3>${esc(title)}</h3><p>${esc(text)}</p>`).join('') +
+      `<h3>${esc(u.contact)}</h3><p>${esc(u.contactText)} <a href="mailto:${EMAIL}">${EMAIL}</a></p>`;
+    return `<section id="${l}" lang="${l}" dir="ltr">${body}</section>`;
+  }).join('\n');
+  const t = T.en;
+  return `${head({ ...t, title: 'Ünsiyet — Terms of Service' }, '/unsiyet/terms.html')}
+<body>
+${topBar({ ...t, other: { label: 'TR', href: '/' } }, false)}
+<main class="doc"><div class="wrap">
+<h1>Terms of Service</h1>
+<nav class="langs" aria-label="Language"><a href="#tr" hreflang="tr">Türkçe</a><a href="#en" hreflang="en">English</a></nav>
+${sections}
+</div></main>
+<footer class="site"><div class="wrap"><span>© 2026 Ahmet Dumaner</span><nav><a href="/unsiyet/support.html">Support</a><a href="/unsiyet/privacy.html">Privacy</a><a href="/unsiyet/terms.html">Terms</a><a href="/unsiyet/delete-data.html">Data deletion</a><a href="mailto:${EMAIL}">${EMAIL}</a></nav></div></footer>
+</body>
+</html>
+`;
+}
+
+/* ---- TikTok login return page: shows the one-time code so it can be pasted into the
+   publishing tool. Nothing is sent anywhere; the page only reads its own address. ---- */
+
+function tiktokCallback() {
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Ünsiyet — TikTok connection</title>
+<link rel="icon" href="/assets/icon-192.png">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<main class="doc"><div class="wrap">
+<h1>TikTok connection</h1>
+<p id="msg">Reading the result…</p>
+<p><button id="copy" type="button" hidden>Copy this page's address</button></p>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var msg = document.getElementById('msg');
+  var btn = document.getElementById('copy');
+  if (q.get('error')) { msg.textContent = 'TikTok returned an error: ' + q.get('error') + ' ' + (q.get('error_description') || ''); return; }
+  if (!q.get('code')) { msg.textContent = 'No authorization code in this address.'; return; }
+  msg.textContent = 'Authorized. Copy this page\\'s full address and give it to the publishing tool. The code works once and expires in a few minutes.';
+  btn.hidden = false;
+  btn.onclick = function () { navigator.clipboard.writeText(location.href).then(function () { btn.textContent = 'Copied'; }); };
+})();
+</script>
+</div></main>
+</body>
+</html>
+`;
+}
+
 write('index.html', home('tr'));
+write('unsiyet/terms.html', termsPage());
+write('unsiyet/tiktok-callback.html', tiktokCallback());
 write('en/index.html', home('en'));
 for (const kind of ['privacy', 'support', 'delete-data']) write(`unsiyet/${kind}.html`, docPage(kind));
 mkdirSync(join(root, 'assets'), { recursive: true });

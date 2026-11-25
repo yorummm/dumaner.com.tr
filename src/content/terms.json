@@ -1,0 +1,34 @@
+{
+  "tr": {
+    "title": "Kullanım Şartları",
+    "updated": "Son güncelleme: 25 Kasım 2026",
+    "intro": "Bu şartlar Ünsiyet mobil uygulamasının ve Ünsiyet'in resmî sosyal medya hesaplarında paylaşım yapmak için kullanılan araçların kullanımını düzenler. Uygulamayı kullanarak bu şartları kabul etmiş olursun.",
+    "items": [
+      ["Hizmet", "Ünsiyet; namaz vakitleri, kıble yönü, Kur'an-ı Kerim, hadis, dua, zikirmatik ve yapay zekâ destekli sohbet sunan bir İslami yaşam uygulamasıdır. Üyelik gerektirmez; verilerin cihazında saklanır. Ayrıntılar Gizlilik Politikası'ndadır."],
+      ["Dini içerik", "Ayet, meal, hadis ve dua metinleri, Destek sayfasında listelenen kaynaklardan değiştirilmeden gösterilir. Namaz vakitleri cihazda hesaplanır; küçük farklar olabilir, yerel takvimle karşılaştırman önerilir."],
+      ["Sohbet", "Ünsiyet sohbeti yapay zekâ ile çalışır ve genel bilgi verir; fetva değildir, bir âlimin veya müftülüğün görüşünün yerine geçmez. Kişiye özel dini meseleler için yetkili bir kuruma danışmalısın."],
+      ["Premium ve abonelikler", "Premium aylık veya yıllık abonelik olarak App Store ya da Google Play üzerinden satın alınır. Ücretlendirme, deneme süresi, yenileme ve iptal ilgili mağazanın kurallarına tabidir; aboneliği mağaza hesabının ayarlarından yönetebilir ve iptal edebilirsin."],
+      ["Kabul edilebilir kullanım", "Uygulamayı yasalara aykırı amaçlarla, başkalarına zarar verecek şekilde veya hizmetin işleyişini bozmaya yönelik kullanmamalısın. Sohbet özelliğini otomatik araçlarla toplu istek göndermek için kullanmamalısın."],
+      ["Sosyal medya paylaşımları", "Ünsiyet'in TikTok, Instagram ve Facebook hesaplarındaki paylaşımlar yalnızca Ünsiyet'in kendi hesaplarına, kendi hazırladığı içerikle yapılır. Bu araçlar başka kullanıcıların hesaplarına erişmez ve onların adına paylaşım yapmaz."],
+      ["Fikrî haklar", "Uygulamanın tasarımı, yazılımı ve kendi hazırladığı metinler Ünsiyet'e aittir. Kaynaklardan alınan metinler kendi lisanslarına tabidir."],
+      ["Sorumluluğun sınırı", "Uygulama olduğu gibi sunulur. Hizmetin kesintisiz veya hatasız olacağı garanti edilmez. Yasaların izin verdiği ölçüde, uygulamanın kullanımından doğan dolaylı zararlardan sorumluluk kabul edilmez."],
+      ["Değişiklikler", "Bu şartlar güncellenebilir; güncel hâli her zaman bu sayfadadır. Önemli değişikliklerden sonra uygulamayı kullanmaya devam etmen yeni şartları kabul ettiğin anlamına gelir."]
+    ]
+  },
+  "en": {
+    "title": "Terms of Service",
+    "updated": "Last updated: 25 November 2026",
+    "intro": "These terms govern the use of the Ünsiyet mobile app and of the tools used to publish on Ünsiyet's official social media accounts. By using the app you accept these terms.",
+    "items": [
+      ["The service", "Ünsiyet is an Islamic lifestyle app with prayer times, qibla direction, the Quran, hadith, duas, a dhikr counter and an AI-assisted chat. It needs no account; your data is kept on your device. See the Privacy Policy for details."],
+      ["Religious content", "Quran text, translations, hadiths and duas are shown without changes from the sources listed on the Support page. Prayer times are calculated on the device; small differences can occur, so compare them with your local timetable."],
+      ["Chat", "Ünsiyet's chat is powered by AI and gives general information; it is not a fatwa and does not replace the opinion of a scholar or an official religious authority. For personal religious questions, consult a qualified institution."],
+      ["Premium and subscriptions", "Premium is bought as a monthly or yearly subscription through the App Store or Google Play. Pricing, free trials, renewal and cancellation follow the rules of that store; you can manage and cancel the subscription in your store account settings."],
+      ["Acceptable use", "Do not use the app for unlawful purposes, to harm others, or to disrupt the service. Do not use the chat to send automated bulk requests."],
+      ["Social media publishing", "Posts on Ünsiyet's TikTok, Instagram and Facebook accounts are made only to Ünsiyet's own accounts, with content Ünsiyet created. These tools do not access other users' accounts and do not post on their behalf."],
+      ["Intellectual property", "The app's design, software and its own texts belong to Ünsiyet. Texts taken from sources are subject to their own licences."],
+      ["Limitation of liability", "The app is provided as is. Uninterrupted or error-free service is not guaranteed. To the extent permitted by law, no liability is accepted for indirect damages arising from the use of the app."],
+      ["Changes", "These terms may be updated; the current version is always on this page. Continuing to use the app after significant changes means you accept the new terms."]
+    ]
+  }
+}

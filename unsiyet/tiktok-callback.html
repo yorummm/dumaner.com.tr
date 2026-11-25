@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Ünsiyet — TikTok connection</title>
+<link rel="icon" href="/assets/icon-192.png">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<main class="doc"><div class="wrap">
+<h1>TikTok connection</h1>
+<p id="msg">Reading the result…</p>
+<p><button id="copy" type="button" hidden>Copy this page's address</button></p>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var msg = document.getElementById('msg');
+  var btn = document.getElementById('copy');
+  if (q.get('error')) { msg.textContent = 'TikTok returned an error: ' + q.get('error') + ' ' + (q.get('error_description') || ''); return; }
+  if (!q.get('code')) { msg.textContent = 'No authorization code in this address.'; return; }
+  msg.textContent = 'Authorized. Copy this page\'s full address and give it to the publishing tool. The code works once and expires in a few minutes.';
+  btn.hidden = false;
+  btn.onclick = function () { navigator.clipboard.writeText(location.href).then(function () { btn.textContent = 'Copied'; }); };
+})();
+</script>
+</div></main>
+</body>
+</html>
