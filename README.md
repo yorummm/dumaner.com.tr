@@ -5,3 +5,5 @@ Ahmet Dumaner'ın uygulamalarının sitesi (şimdilik Ünsiyet). GitHub Pages bu
 - `src/build.mjs` sayfaları üretir: `/`, `/en/`, `/unsiyet/privacy.html`, `/unsiyet/support.html`, `/unsiyet/delete-data.html`.
 - `src/assets.mjs` uygulama projesinden ikon ve ekran görüntülerini hazırlar.
 - Metinler `src/build.mjs` ve `src/content/` içinde; değiştirdikten sonra `node src/build.mjs` çalıştırıp gönderin.
+- `src/build.mjs` ayrıca `/unsiyet/terms.html` (kullanım şartları, metin `src/content/terms.json`) ve `/unsiyet/tiktok-callback.html` (TikTok girişinin dönüş sayfası; kodu yalnız ekranda gösterir) üretir.
+- Kökteki `tiktok7vGuHDCxeo0a2NcRQLI7wtQaRdmO9Eqk.txt`, TikTok geliştirici portalının site doğrulama dosyasıdır; silinmez.
