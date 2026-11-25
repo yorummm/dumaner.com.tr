@@ -98,7 +98,7 @@ const T = {
     appDesc:
       'Namaz vakitleri, Kur’an, hadis, dua, Namaz Rehberi ve Zikirmatik; ruh hâline göre öneriler sunan sohbetle birlikte.',
     appStatus: 'App Store’da · Google Play’de yakında',
-    links: { support: 'Destek', privacy: 'Gizlilik', deleteData: 'Veri silme' },
+    links: { support: 'Destek', privacy: 'Gizlilik', terms: 'Kullanım şartları', deleteData: 'Veri silme' },
     nextTitle: 'Sıradaki uygulama',
     nextText: 'Üzerinde çalışıyorum. Hazır olduğunda ilk burada duyacaksın.',
     aboutTitle: 'Hakkımda',
@@ -185,7 +185,7 @@ const T = {
     appsIntro: 'The first is on the App Store, more will follow.',
     appDesc: 'Prayer times, Quran, hadith, dua, a Prayer Guide and a Dhikr Counter, with a chat that suggests verses for how you feel.',
     appStatus: 'On the App Store · coming soon to Google Play',
-    links: { support: 'Support', privacy: 'Privacy', deleteData: 'Data deletion' },
+    links: { support: 'Support', privacy: 'Privacy', terms: 'Terms', deleteData: 'Data deletion' },
     nextTitle: 'The next app',
     nextText: 'I am working on it. You will hear about it here first.',
     aboutTitle: 'About',
@@ -250,7 +250,7 @@ function home(lang) {
   const t = T[lang];
   const base = lang === 'en' ? '/en/' : '/';
   const links = (prefix = '/unsiyet') =>
-    `<a href="${prefix}/support.html#${lang}">${esc(t.links.support)}</a><a href="${prefix}/privacy.html#${lang}">${esc(t.links.privacy)}</a><a href="${prefix}/delete-data.html#${lang}">${esc(t.links.deleteData)}</a>`;
+    `<a href="${prefix}/support.html#${lang}">${esc(t.links.support)}</a><a href="${prefix}/privacy.html#${lang}">${esc(t.links.privacy)}</a><a href="${prefix}/terms.html#${lang}">${esc(t.links.terms)}</a><a href="${prefix}/delete-data.html#${lang}">${esc(t.links.deleteData)}</a>`;
   const m = t.mock;
   const bar = `<div class="bar"><img src="/assets/icon-192.png" alt=""><div><b>Ünsiyet</b><span>● ${esc(m.online)}</span></div></div>`;
   return `${head(t, base)}
@@ -387,7 +387,7 @@ ${topBar({ ...t, other: { label: 'TR', href: '/' } }, false)}
 <nav class="langs" aria-label="Language">${LANGS.map(([l, n]) => `<a href="#${l}" hreflang="${l}">${n}</a>`).join('')}</nav>
 ${sections}
 </div></main>
-<footer class="site"><div class="wrap"><span>© 2026 Ahmet Dumaner</span><nav><a href="/unsiyet/support.html">Support</a><a href="/unsiyet/privacy.html">Privacy</a><a href="/unsiyet/delete-data.html">Data deletion</a><a href="mailto:${EMAIL}">${EMAIL}</a></nav></div></footer>
+<footer class="site"><div class="wrap"><span>© 2026 Ahmet Dumaner</span><nav><a href="/unsiyet/support.html">Support</a><a href="/unsiyet/privacy.html">Privacy</a><a href="/unsiyet/terms.html">Terms</a><a href="/unsiyet/delete-data.html">Data deletion</a><a href="mailto:${EMAIL}">${EMAIL}</a></nav></div></footer>
 </body>
 </html>
 `;
